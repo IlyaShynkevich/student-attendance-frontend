@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Editing a class</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: rgb(100, 181, 251);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;      
+            }
+            .class-list {
+                max-height: 140px;
+                overflow-y: auto;
+                border: 2px solid black;
+                padding: 10px;
+                margin-bottom: 15px;
+                background: white;
+                border-radius: 5px;
+            }
+            .student-list {
+                max-height: 140px;
+                overflow-y: auto;
+                border: 2px solid black;
+                padding: 10px;
+                margin-bottom: 15px;
+                background: white;
+                border-radius: 5px;
+            }
+            .search-box {
+                margin-bottom: 15px;
+            }
+            .main_container {
+                text-align: left;
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                border: 2px solid black;
+                height: auto;
+                width: 500px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            }
+            h2 {
+                font-size: 1.5em;
+                color: rgb(57, 129, 177);
+            }
+            input {
+                width: 80%;
+                max-width: 400px;
+                padding: 8px;
+                border: 2px solid black;
+                border-radius: 4px;
+                margin-bottom: 10px;
+            }
+
+
+            .class, .student {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5px;
+                padding: 5px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .class button, .student button {
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+                padding: 5px 10px;
+                cursor: pointer;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+                margin-left: 10px;
+            }
+
+            .class button:hover, .student button:hover {
+                background-color: lightblue;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+            .buttons button {
+                background-color: white;
+                color: black;
+                border: 2px solid black;
+                border-radius: 4px;
+                height: 40px;
+                width: 120px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .buttons button:hover {
+                background-color: lightblue;
+            }
+
+        </style>
+    </head>
+    <body>
+            <div class="main_container">
+
+                <h2> Editing existing class:</h2>
+
+                <div class="name_form_container">
+                    <label for="name">Choose a class to edit:</label>
+                    <div class="class-list" id="class-list">
+                        <!-- Dynamic class list will be populated here -->
+                    </div>
+                </div>
+                <h2 id="class-title">Add/Remove Students to Classes:</h2>
+            
+                <div class="search-box">
+                    <label for="student-search">Search for a student:</label>
+                    <input type="text" id="student-search" placeholder="Type to search...">
+                </div>
+            
+                <div class="student-list" id="student-list">
+                    <!-- Dynamic student list will be populated here -->
+                </div>
+                <div class="buttons">
+                    <button id="cancel" onclick="goBack()">CANCEL</button>
+                    <button id="finish" onclick="goBack()">FINISH</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="class_editing.js">
+            function goBack() {
+        window.location.href = "home.html";
+    }
+        </script>
+    </body>
+</html>

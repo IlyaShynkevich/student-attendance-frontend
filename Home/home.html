@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="HomeStyle.css">
+</head>
+<body>
+    <h1 id="classesTitle">Classes</h1>
+    <div class="class-container">
+        <div id="classCards"></div>
+    </div>
+    <div class="nav-buttons">
+        <button id="create-class" onclick="createClass()">Add a new Class</button>
+        <button id="edit-classes" onclick="editClasses()">Edit Classes</button>
+        <button id="studentList" onclick="genReport()">Student Report</button>
+        <button id="logout" onclick="window.location.href = '../Login/login.html'">Logout</button>
+    </div>
+</body>
+<script src="HomeScripts.js"></script>
+</html>

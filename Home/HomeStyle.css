@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(100, 181, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 20px;
+}
+
+#classesTitle {
+    align-self: flex-start;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.class-container {
+    display: table;
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.class-row {
+    display: table-row;
+}
+
+.class-card {
+    display: table-cell;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    border: solid 2px black;
+}
+
+.class-card img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.class-card a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 150px;
+}
+
+.class-card a:hover {
+    color: rgb(100, 181, 251);
+}
+
+.nav-buttons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.nav-buttons button:hover {
+    color: rgb(100, 181, 251);
+}
+
+.class-card button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 6px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.class-card button:hover {
+    background-color: rgb(255, 100, 100);
+    color: white;
+}
+

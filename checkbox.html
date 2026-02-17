@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: left;
+            color: #4b4b4b;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .attendance-table, .results-table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .attendance-table th, .attendance-table td, .results-table th, .results-table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #d1d5db;
+        }
+
+        .attendance-table th, .results-table th {
+            background-color: #9ca3af;
+            color: white;
+            font-size: 16px;
+        }
+
+        .attendance-table td, .results-table td {
+            background-color: #f9fafb;
+            font-size: 14px;
+        }
+
+        .attendance-table tr:nth-child(even), .results-table tr:nth-child(even) {
+            background-color: #e5e7eb;
+        }
+
+        .attendance-table input[type="checkbox"] {
+            transform: scale(1.3);
+        }
+
+        .attendance-table td button {
+            background-color: #4b5563;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .attendance-table td button:hover {
+            background-color: #374151;
+        }
+
+        .subject-header {
+            font-size: 27px;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #4b5563;
+        }
+
+        .results-table td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lessons and Attendance</h1>
+
+    <div class="container">
+
+        <div class="subject-header">Math</div>
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ivanov Ivan</td>
+                    <td><input type="checkbox" id="math-ivan" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Petrov Petr</td>
+                    <td><input type="checkbox" id="math-petr" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Sidorov Sergey</td>
+                    <td><input type="checkbox" id="math-sergey" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Smirnov Alexey</td>
+                    <td><input type="checkbox" id="math-alexey" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Novikov Dmitry</td>
+                    <td><input type="checkbox" id="math-dmitry" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Kozlov Kirill</td>
+                    <td><input type="checkbox" id="math-kirill" class="attendance-checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="subject-header">History</div>
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ivanov Ivan</td>
+                    <td><input type="checkbox" id="history-ivan" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Petrov Petr</td>
+                    <td><input type="checkbox" id="history-petr" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Sidorov Sergey</td>
+                    <td><input type="checkbox" id="history-sergey" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Smirnov Alexey</td>
+                    <td><input type="checkbox" id="history-alexey" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Novikov Dmitry</td>
+                    <td><input type="checkbox" id="history-dmitry" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Kozlov Kirill</td>
+                    <td><input type="checkbox" id="history-kirill" class="attendance-checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="subject-header">Physics</div>
+        <table class="attendance-table">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ivanov Ivan</td>
+                    <td><input type="checkbox" id="physics-ivan" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Petrov Petr</td>
+                    <td><input type="checkbox" id="physics-petr" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Sidorov Sergey</td>
+                    <td><input type="checkbox" id="physics-sergey" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Smirnov Alexey</td>
+                    <td><input type="checkbox" id="physics-alexey" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Novikov Dmitry</td>
+                    <td><input type="checkbox" id="physics-dmitry" class="attendance-checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Kozlov Kirill</td>
+                    <td><input type="checkbox" id="physics-kirill" class="attendance-checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button onclick="calculatePercentages()">Calculate Percentages</button>
+
+        <table class="results-table">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Overall Attendance Percentage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ivanov Ivan</td>
+                    <td id="ivan-overall-percentage">0%</td>
+                </tr>
+                <tr>
+                    <td>Petrov Petr</td>
+                    <td id="petr-overall-percentage">0%</td>
+                </tr>
+                <tr>
+                    <td>Sidorov Sergey</td>
+                    <td id="sergey-overall-percentage">0%</td>
+                </tr>
+                <tr>
+                    <td>Smirnov Alexey</td>
+                    <td id="alexey-overall-percentage">0%</td>
+                </tr>
+                <tr>
+                    <td>Novikov Dmitry</td>
+                    <td id="dmitry-overall-percentage">0%</td>
+                </tr>
+                <tr>
+                    <td>Kozlov Kirill</td>
+                    <td id="kirill-overall-percentage">0%</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script>
+        function calculatePercentages() {
+            const totalClasses = 3;
+            let totalAttendance = {
+                "ivan": 0,
+                "petr": 0,
+                "sergey": 0,
+                "alexey": 0,
+                "dmitry": 0,
+                "kirill": 0
+            };
+
+            const subjects = ["math", "history", "physics"];
+            subjects.forEach(subject => {
+                totalAttendance["ivan"] += document.getElementById(`${subject}-ivan`).checked ? 1 : 0;
+                totalAttendance["petr"] += document.getElementById(`${subject}-petr`).checked ? 1 : 0;
+                totalAttendance["sergey"] += document.getElementById(`${subject}-sergey`).checked ? 1 : 0;
+                totalAttendance["alexey"] += document.getElementById(`${subject}-alexey`).checked ? 1 : 0;
+                totalAttendance["dmitry"] += document.getElementById(`${subject}-dmitry`).checked ? 1 : 0;
+                totalAttendance["kirill"] += document.getElementById(`${subject}-kirill`).checked ? 1 : 0;
+            });
+
+            Object.keys(totalAttendance).forEach(student => {
+                const percentage = (totalAttendance[student] / (subjects.length)) * 100;
+                document.getElementById(`${student}-overall-percentage`).innerText = percentage.toFixed(0) + '%';
+            });
+        }
+    </script>
+
+</body>
+</html>

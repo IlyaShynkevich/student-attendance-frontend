@@ -1,0 +1,767 @@
+[
+  {
+    "name": "Mathematics",
+    "icon": "ic1",
+    "students": [
+      {
+        "id": 1,
+        "name": "Lisa Moore",
+        "attendance": [
+          {
+            "date": "2025-01-20",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-12",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-28",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-02",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-04",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-06",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-08",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-08",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-16",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-24",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-02",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-06",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-14",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-18",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-22",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-26",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-01",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-03",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-05",
+            "status": "ill"
+          },
+          {
+            "date": "2025-01-07",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-09",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-11",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-13",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-15",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-17",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-19",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-21",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-23",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-25",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-27",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-01",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-02",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-03",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-04",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-05",
+            "status": "ill"
+          },
+          {
+            "date": "2025-01-06",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-07",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-08",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-09",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-11",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-12",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-13",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-14",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-15",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-16",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-17",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-18",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-19",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-20",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-21",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-22",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-23",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-24",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-25",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-26",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-27",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-28",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-01",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-02",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-03",
+            "status": "ill"
+          },
+          {
+            "date": "2025-02-04",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-05",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-06",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-07",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-08",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-09",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-11",
+            "status": "present"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Matthew Alexander DVM",
+        "attendance": [
+          {
+            "date": "2025-01-08",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-03",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-07",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-11",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-02",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-04",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-06",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-08",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-10",
+            "status": "ill"
+          },
+          {
+            "date": "2025-02-02",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-04",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-06",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-08",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-01",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-02",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-03",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-04",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-05",
+            "status": "ill"
+          },
+          {
+            "date": "2025-01-06",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-07",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-08",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-09",
+            "status": "ill"
+          },
+          {
+            "date": "2025-01-10",
+            "status": "ill"
+          },
+          {
+            "date": "2025-01-11",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-12",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-13",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-14",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-15",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-16",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-17",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-18",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-19",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-20",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-21",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-22",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-23",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-24",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-25",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-26",
+            "status": "present"
+          },
+          {
+            "date": "2025-01-27",
+            "status": "absent"
+          },
+          {
+            "date": "2025-01-28",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-01",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-02",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-03",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-04",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-05",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-06",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-07",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-08",
+            "status": "absent"
+          },
+          {
+            "date": "2025-02-09",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-11",
+            "status": "present"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Hunter Estes",
+        "attendance": [
+          {
+            "date": "2025-02-02",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-04",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-06",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-08",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-01",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-02",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-03",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-04",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-05",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-06",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-07",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-08",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-09",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-11",
+            "status": "present"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Bradley Bowman",
+        "attendance": [
+          {
+            "date": "2025-02-02",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-04",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-06",
+            "status": "ill"
+          },
+          {
+            "date": "2025-02-08",
+            "status": "ill"
+          },
+          {
+            "date": "2025-02-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-01",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-02",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-03",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-04",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-05",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-06",
+            "status": "ill"
+          },
+          {
+            "date": "2025-02-07",
+            "status": "ill"
+          },
+          {
+            "date": "2025-02-08",
+            "status": "ill"
+          },
+          {
+            "date": "2025-02-09",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-10",
+            "status": "present"
+          },
+          {
+            "date": "2025-02-11",
+            "status": "present"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Physics",
+    "icon": "ic2",
+    "students": [
+      {
+        "id": 6,
+        "name": "Darrell Hood",
+        "attendance": []
+      },
+      {
+        "id": 7,
+        "name": "David Hoover",
+        "attendance": []
+      }
+    ]
+  },
+  {
+    "name": "Literature",
+    "icon": "ic4",
+    "students": [
+      {
+        "id": 8,
+        "name": "Tiffany Roberson",
+        "attendance": []
+      }
+    ]
+  },
+  {
+    "name": "Astrology",
+    "icon": "ic3",
+    "students": [
+      {
+        "id": 10,
+        "name": "Janet Figueroa",
+        "attendance": []
+      },
+      {
+        "id": 9,
+        "name": "Sylvia Clark",
+        "attendance": []
+      }
+    ]
+  },
+  {
+    "name": "Programming",
+    "icon": "ic5",
+    "students": [
+      {
+        "id": 3,
+        "name": "Matthew Alexander DVM",
+        "attendance": [
+          {
+            "date": "2025-02-13",
+            "status": "present"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Hunter Estes",
+        "attendance": [
+          {
+            "date": "2025-02-13",
+            "status": "absent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sport",
+    "icon": "ic4",
+    "students": [
+      {
+        "id": 1,
+        "name": "Lisa Moore",
+        "attendance": []
+      },
+      {
+        "id": 2,
+        "name": "Laurie Joseph",
+        "attendance": []
+      },
+      {
+        "id": 3,
+        "name": "Matthew Alexander DVM",
+        "attendance": []
+      }
+    ]
+  },
+  {
+    "name": "Minecraft",
+    "icon": "ic4",
+    "students": [
+      {
+        "id": 3,
+        "name": "Matthew Alexander DVM",
+        "attendance": []
+      },
+      {
+        "id": 4,
+        "name": "Hunter Estes",
+        "attendance": []
+      },
+      {
+        "id": 5,
+        "name": "Bradley Bowman",
+        "attendance": []
+      }
+    ]
+  }
+]

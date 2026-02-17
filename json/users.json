@@ -1,0 +1,26 @@
+[
+    {
+        "username": "admin",
+        "password": "admin1",
+        "teacherName": "admin",
+        "userId": "admin"
+    },
+    {
+        "username": "teacher1",
+        "password": "password1",
+        "teacherName": "teacher1",
+        "userId": 2
+    },
+    {
+        "username": "teacher2",
+        "password": "password2",
+        "teacherName": "teacher2",
+        "userId": 3
+    },
+    {
+        "username": "teacher3",
+        "password": "password3",
+        "teacherName": "teacher3",
+        "userId": 4
+    }
+]

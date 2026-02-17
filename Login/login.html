@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="LoginStyle.css">
+</head>
+<body>
+    <div class="Banner">
+        <h1>Student Attendance System</h1>
+        <p>The one stop for all tracking needs</p>
+    </div>
+
+    <div class="loginContainer">
+        <h2>Login</h2>
+        <div class="formContainer">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="formContainer">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <button class="loginButton" onclick="handleLogin()">Login</button>
+        <div class="message" id="message"></div>                 
+    </div>
+
+    <script src="LoginScripts.js"></script>
+</body>
+</html>

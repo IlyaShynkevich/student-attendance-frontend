@@ -1,0 +1,120 @@
+[
+    {
+    "id": 1,
+    "name": "Mathematics",
+    "students": [ {
+        "name": "John Doe",
+        "attendance": 
+        [
+        {
+            "date": "2025-02-09",
+            "status": "present"
+        },
+        {
+            "date": "2025-01-12",
+            "status": "absent"
+        },
+        {
+            "date": "2025-01-24",
+            "status": "ill"
+        }
+        ]
+        },
+        {
+            "name": "Jmar Shah",
+            "attendance": [
+            {
+                "date": "2025-03-09",
+                "status": "present"
+            },
+            {
+                "date": "2025-06-12",
+                "status": "absent"
+            },
+            {
+                "date": "2025-01-20",
+                "status": "ill"
+            }]
+        },
+        {
+            "name": "Qmar Shah",
+            "attendance": [{
+                "date": "2025-01-09",
+                "status": "present"
+            },
+            {
+                "date": "2025-01-12",
+                "status": "absent"
+            },
+            {
+                "date": "2025-01-20",
+                "status": "ill"
+            }]
+        },
+        {
+            "name": "Smar Shah",
+            "attendance": [{
+                "date": "2025-01-09",
+                "status": "present"
+            },
+            {
+                "date": "2025-08-12",
+                "status": "absent"
+            },
+            {
+                "date": "2025-01-20",
+                "status": "ill"
+            }]
+        },
+        {
+            "name": "Bmar Shah",
+            "attendance": [{}]
+        }
+        ]
+    },
+    {
+    "id": 2,
+    "name": "Physics",
+    "students": [{
+        "name": "Anant Jain",
+        "attendance": [{
+            "date": "2025-01-10",
+            "status": "present"
+        },
+        {
+            "date": "2025-01-08",
+            "status": "absent"
+        },
+        {
+            "date": "2025-01-20",
+            "status": "ill"
+        }]
+    },
+    {
+        "name": "Omar Shah",
+        "attendance": [{
+            "date": "2025-01-06",
+            "status": "present"
+        },
+        {
+            "date": "2025-08-12",
+            "status": "absent"
+        },
+        {
+            "date": "2025-01-07",
+            "status": "ill"
+        }]
+    }]
+    },
+    {
+    "id": 3,
+    "name": "Literature",
+    "students": [{
+        "name": "Eve Walker",
+        "attendance": [{}]
+    }
+             
+              
+    ]
+    }
+]

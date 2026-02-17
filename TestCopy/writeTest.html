@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <style>
+      body 
+{
+    font-family: "Comic Sans", sans-serif;
+}
+table, th, td 
+{
+    border: solid 1px #0a0909;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 70%;
+}
+th 
+{ 
+    font-weight:bold;
+    font-size: 26px;
+}
+td 
+{ 
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <table>
+      <thead>
+        <tr>
+          <th>Classes</th>
+        </tr>
+      </thead>
+      <tbody id="classTable">
+      </tbody>
+    </table>
+</body>
+<script>
+ // Define the attendance data to send
+const Data = {
+            className: "Mathematics",
+            student: "Jmar Shah",
+            attendance: {
+                date: "2025-01-04",
+                status: "test"
+            }
+        };
+async function test (data)
+{
+// Define the endpoint of your local server
+    console.log("Data being sent:", data);
+    await fetch('http://localhost:3000/update', {
+    method: "POST", // Use "POST" if you're adding new data, "PUT" to overwrite
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(data) // Convert the data object to JSON string
+})
+    .then(response => {
+        if (response.ok) {
+            console.log("Data successfully sent to the server.");
+        } else {
+            console.error("Failed to send data:", response.statusText);
+        }
+    })
+    .catch(error => console.error("Error:", error));
+}
+test(Data);
+</script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <title id="pageTitle"></title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: rgb(100, 181, 251);
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                height: 100vh;
+                margin: 20px;
+            }
+            table {
+                background-color: rgb(255, 255, 255);
+                width: 100%;
+                border-collapse: collapse;
+                border: 2px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th, td {
+                border: 2px solid black;
+                padding: 8px;
+                text-align: center;
+                height: 20px;
+            }
+            .low {
+                background-color: rgb(239, 137, 137);
+            }
+            .high {
+                background-color: rgb(139, 238, 139);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="topTitle">
+            <h1 id="heading"></h1>
+        </div>
+        <table id="tableBody">
+
+        </table>
+        
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const user = urlParams.get('user');
+            const studentName = urlParams.get('studentName');
+            const tableBody = document.getElementById("tableBody");
+            const page = document.getElementById("pageTitle");
+            const heading = document.getElementById("heading");
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let count = false;
+            
+            page.textContent = `${studentName}'s Attendance`;
+            heading.textContent = `${studentName}'s Attendance`; 
+            fetch('http://localhost:3000/home', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ user: user })
+            })
+            .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json(); // Parse the response as JSON
+            })
+            .then(data => {
+                data.forEach(subject => {
+                    const module = subject.name;
+                    let monthlyAttendance = {};
+                    let thisStudent = subject.students.find(student => student.name === studentName);
+                    if(thisStudent && thisStudent.attendance.length > 0) {
+                        count = true;
+                        tableBody.append(document.createElement('tr'));
+                        const tableHead = document.createElement('th');
+                        tableHead.textContent = module;
+                        tableHead.colSpan = 6;
+                        tableBody.append(tableHead);
+                        let row = 
+                        `<tr>
+                            <th>Month & Year</th>
+                            <th>No. of Classes</th>
+                            <th>Days Present</th>
+                            <th>Days Absent</th>
+                            <th>Days Sick</th>
+                            <th>Attendance Percentage</th>
+                        </tr>`;
+                        tableBody.innerHTML += row;
+                        thisStudent.attendance.sort((a, b) => new Date(a.date) - new Date(b.date));
+                        thisStudent.attendance.forEach(attendance => {
+                            let entry = new Date(attendance.date);
+                            let monthKey = `${entry.getFullYear()}-${entry.getMonth()+1}`;
+                            if (!monthlyAttendance[monthKey]) {
+                                monthlyAttendance[monthKey] = { present: 0, absent: 0, ill: 0 };
+                            }
+                            switch(attendance.status) {
+                                case "present":
+                                    monthlyAttendance[monthKey].present++;
+                                    break;
+                                case "absent":
+                                    monthlyAttendance[monthKey].absent++;
+                                    break;
+                                case "ill":
+                                    monthlyAttendance[monthKey].ill++;
+                            }
+                            
+                        })
+                        for (let month in monthlyAttendance) {
+                            let totalDays = monthlyAttendance[month].present + monthlyAttendance[month].absent + monthlyAttendance[month].ill;
+                            let attendancePercentage = (((monthlyAttendance[month].present + monthlyAttendance[month].ill)/ totalDays) * 100).toFixed(2);
+                            const date = new Date(month);
+                            row = 
+                                `<tr id="${module}${month}">
+                                <td>${monthNames[date.getMonth()]} ${date.getFullYear()}</td>
+                                <td>${totalDays}</td>
+                                <td>${monthlyAttendance[month].present}</td>
+                                <td>${monthlyAttendance[month].absent}</td>
+                                <td>${monthlyAttendance[month].ill}</td>
+                                <td>${attendancePercentage}%</td>
+                                </tr>`;
+                            tableBody.innerHTML += row;
+                            const modifier = document.getElementById(module+month);
+                            if(attendancePercentage < 75) {
+                                modifier.classList.add('low');
+                            }
+                            else {
+                                modifier.classList.add('high');
+                            }
+                        }
+                    }
+                })
+                if (!count) {
+                    document.getElementById("topTitle").innerHTML += `<h2>There are no records for this student yet</h2>`;
+                }
+            });
+        </script>
+    </body>
+</html>

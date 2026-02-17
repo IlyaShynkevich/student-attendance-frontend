@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Report Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(100, 181, 251);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #000;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        table {
+            background-color: white;
+            border-collapse: collapse;
+            border: 2px solid black;
+            width: 300px;
+            text-align: center;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        td a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        td a:hover {
+            color: rgb(100, 181, 251);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <h1>Student List</h1>
+        <table id="tableBody">
+        </table>
+    </div>
+</body>
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const user = urlParams.get('user');
+    const tableBody = document.getElementById("tableBody");
+
+    function generateReport(user)
+    {
+        let studentList = new Set();
+        fetch('http://localhost:3000/home', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ user: user })
+        })
+        .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json(); // Parse the response as JSON
+        })
+        .then(data => {
+            data.forEach(month => {
+                month.students.forEach(student => {
+                    studentList.add(student.name);
+                })
+            });
+            for (let i of studentList) {
+            console.log("i = ",i);
+            const row = document.createElement("tr");
+            const cell = document.createElement("td");
+            const link = document.createElement('a');
+            link.href = `./sReport.html?studentName=${encodeURIComponent(i)}&user=${encodeURIComponent(user)}`;
+            link.textContent = i;
+            cell.append(link);
+            row.append(cell);
+            tableBody.append(row);
+        }
+        });
+    }
+
+    generateReport(user);
+</script>
+</html>
