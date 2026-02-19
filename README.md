@@ -1,24 +1,20 @@
-# Student Attendance Frontend
+# Student Attendance Management System
 
-Frontend implementation of a web-based student attendance management system.
+Team-based web application for managing student attendance.
 
-## Overview
-A student/teacher interface for managing classes and tracking attendance through a web UI.
-
-## Features
-- Login flow (UI)
-- Class creation and editing pages
-- Attendance views and reports pages
-- Admin dashboard page (UI)
+## My Contribution
+I implemented the frontend interface including:
+- Login page
+- Class management pages
+- Attendance overview
+- Admin dashboard UI
 
 ## Tech Stack
 - HTML, CSS, JavaScript
-- Node/Express used in the original team project for serving JSON data (this repo focuses on the frontend part)
+- Node.js + Express (for serving JSON data)
 
-## How to Run (local)
-1. Clone the repo
-2. Open any HTML page (e.g. `Home/home.html`) using VS Code Live Server  
-   *(If your pages require backend JSON access, run the server from the team repo or add your own API.)*
+## How to Run
+1. Navigate to /json folder
+2. Run: node server.js
+3. Open homepage via Live Server
 
-## Credits
-Team project repository: https://github.com/Cysrine/StudentAttendance
